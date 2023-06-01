@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Proyecto pàgina</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    
+<link href="css/styles.css" rel="stylesheet" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<body>
+      <!-- Responsive navb-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+          <!--   <a class="navbar-brand" href="#!">PRIMER BLOQUE</a><-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="login.html">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </body>
+
+</html>
+
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    .form-container {
+      width: 400px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    .form-group input[type="submit"] {
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      padding: 10px;
+      border-radius: 3px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .form-group input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Registrar usuario</h2>
+   <!-- <form id="myForm">-->
+        <form id="myForm" action="registrousuario.php" method="post">
+
+      <div class="form-group">
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="Apellido" name="Apellido" required>
+      </div>
+      <div class="form-group">
+        <label for="Telefono">Telefono:</label>
+        <input type="text" id="Telefono" name="Telefono" required>
+      </div>
+      <div class="form-group">
+        <label for="Edad">Edad:</label>
+        <input type="number" id="Edad" name="Edad" required>
+      </div>
+      <div class="form-group">
+        <label for="Sexo">Sexo:</label>
+        <select id="Sexo" name="Sexo" required>
+			<option value="">Seleccione</option>
+			<option value="masculino">Masculino</option>
+			<option value="femenino">Femenino</option>
+		  </select>
+      </div>
+      <div class="form-group">
+        <label for="Puesto">Puesto:</label>
+        <select class="form-control" id="Puesto" name="Puesto">
+			<option selected>Seleciona tu puesto</option>
+			<option>Administrador</option>
+			<option>Taquillero</option>
+			<option>Chofer</option>
+		</select>
+      </div>
+	  <div class="form-group">
+        <label for="Contrasena">Contraseña:</label>
+        <input type="text" id="Contrasena" name="Contrasena" required>
+      </div>
+      
+	  <div class="form-group">
+        <label for="Fecha_ingreso">Fecha:</label>
+        <input type="date" id="Fecha_ingreso" name="Fecha_ingreso" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Guardar">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
